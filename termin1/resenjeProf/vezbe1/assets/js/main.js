@@ -1,7 +1,7 @@
-window.onload = function(){
-	
+window.onload = function () {
+
 	/* PODACI */
-	
+
 	const menu = [
 		{
 			"id": 1,
@@ -19,7 +19,7 @@ window.onload = function(){
 			"link": "contact.html"
 		}
 	]
-	
+
 	const slides = [
 		{
 			"id": 1,
@@ -37,7 +37,7 @@ window.onload = function(){
 			alt: "Third"
 		}
 	];
-	
+
 	const products = [
 		{
 			"id": 1,
@@ -96,55 +96,55 @@ window.onload = function(){
 			}
 		}
 	];
-	
+
 	/* ISPIS MENIJA */
-	
+
 	const menuDiv = document.getElementById('menu');
 	let html = '';
-	for(let i=0; i < menu.length; i++){
-		html+=`<li class="nav-item">
+	for (let i = 0; i < menu.length; i++) {
+		html += `<li class="nav-item">
                 <a class="nav-link" href="${menu[i]['link']}">${menu[i]['title']}</a>
-              </li>`;
+            </li>`;
 	}
 	menuDiv.innerHTML = html;
-	
+
 	/* ISPIS SLAJDERA */
-	
+
 	const sliderDiv = document.getElementById('slider');
 	html = '';
 	slides.forEach((slide, index) => {
-		html+=`<div class="carousel-item ${index == 0 ? 'active' : ''}">
-              <img class="d-block img-fluid" src="assets/img/${slide.src}" alt="${slide.alt}">
+		html += `<div class="carousel-item ${index == 0 ? 'active' : ''}">
+            <img class="d-block img-fluid" src="assets/img/${slide.src}" alt="${slide.alt}">
             </div>`;
 	});
 	sliderDiv.innerHTML = html;
-	
+
 	/* ISPIS PROIZVODA */
-	
+
 	const productsDiv = document.querySelector('#products');
 	html = '';
-	for(const product of products){
-		html+=`<div class="col-lg-4 col-md-6 mb-4">
+	for (const product of products) {
+		html += `<div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="assets/img/${product.image.src}" alt="${product.image.alt}"></a>
-              <div class="card-body">
+            <a href="#"><img class="card-img-top" src="assets/img/${product.image.src}" alt="${product.image.alt}"></a>
+            <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">${product.name}</a>
+                <a href="#">${product.name}</a>
                 </h4>
                 <h5>$${product.price}</h5>
 				<p class="card-text">`;
 		product.categories.forEach((category, index) => {
-			if(index == product.categories.length-1){
-				html+=`${category.name}`;
+			if (index == product.categories.length - 1) {
+				html += `${category.name}`;
 			} else {
-				html+=`${category.name}, `;
+				html += `${category.name}, `;
 			}
-		});	
-		html+=`</p>
+		});
+		html += `</p>
                 <p class="card-text">${product.description}</p>
-              </div>
             </div>
-          </div>`;
+            </div>
+        </div>`;
 	}
 	productsDiv.innerHTML = html;
 }
