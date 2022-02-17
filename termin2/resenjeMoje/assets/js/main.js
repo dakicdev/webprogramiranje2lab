@@ -1,4 +1,4 @@
-var categories, products = [];
+var categories, products, slides, menu = [];
 
 window.onload = function () {
 
@@ -61,11 +61,76 @@ window.onload = function () {
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu est non dolor lacinia posuere quis ultricies nisl. Nulla facilisi."
     }
     ]
+    /*Slajder*/
+    slides = [
+        {
+            "id": 1,
+            "slika": {
+                "src": "first.jpg",
+                "alt": "First"
+            }
+        },
+        {
+            "id": 2,
+            "slika": {
+                "src": "second.jpg",
+                "alt": "Second"
+            }
+        },
+        {
+            "id": 3,
+            "slika": {
+                "src": "third.jpg",
+                "alt": "Third"
+            }
+        }
+    ]
+    // menu
+    menu = [
+        {
+            "id": 1,
+            "href": "index.html",
+            "title": "Home"
+        },
+        {
+            "id": 2,
+            "href": "products.html",
+            "title": "Products"
+        },
+        {
+            "id": 3,
+            "href": "contact.html",
+            "title": "Contact"
+        }
+    ]
 
     showProducts(products);
     showCategories(categories);
     filterByFreeShipping(products);
 
+    let html = '';
+    //prikaz menija
+    for (let i = 0; i < menu.length; i++) {
+
+        html += `
+        <li class="nav-item">
+            <a class="nav-link" href="${menu[i]['href']}">${menu[i]['title']}</a>
+        </li>`;
+    }
+    document.getElementById('menu') = html;
+
+    //prikaz slajdera
+
+    var sliderDiv = document.getElementById('slider');
+    console.log(sliderDiv);
+
+    html = '';
+    slides.forEach((slide, index) => {
+        html += `<div class="carousel-item ${index == 0 ? 'active' : ''}">
+            <img class="d-block img-fluid" src="assets/img/${slide.slika.src}" alt="${slide.slika.alt}">
+            </div>`;
+    });
+    sliderDiv.innerHTML = html;
 
     //prikaz proizvoda
     function showProducts(products) {
