@@ -1,0 +1,55 @@
+[
+	{
+		"id": 1,
+		"name": "Rush",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu est non dolor lacinia posuere quis ultricies nisl. Nulla facilisi.",
+		"categories": [
+			1,
+			2
+		],
+		"image": {
+			"src": "product1.jpg",
+			"alt": "Product 1"
+		},
+		"price": {
+			"before": "100",
+			"current": "89"
+		},
+		"brand": 1
+	},
+	{
+		"id": 2,
+		"name": "Narciso",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu est non dolor lacinia posuere quis ultricies nisl. Nulla facilisi.",
+		"categories": [
+			3,
+			4
+		],
+		"price": {
+			"before": "50",
+			"current": "20"
+		},
+		"image": {
+			"src": "product3.jpg",
+			"alt": "Product 3"
+		},
+		"brand": 3
+	},
+	{
+		"id": 3,
+		"name": "Eros",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu est non dolor lacinia posuere quis ultricies nisl. Nulla facilisi.",
+		"categories": [
+			1
+		],
+		"image": {
+			"src": "product4.jpg",
+			"alt": "Product 4"
+		},
+		"price": {
+			"before": "20",
+			"current": "15"
+		},
+		"brand": 2
+	}
+]
