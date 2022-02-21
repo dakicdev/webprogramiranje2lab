@@ -77,6 +77,7 @@ window.onload = () => {
           </div>`;
 		});
 		document.getElementById('products').innerHTML = html;
+		console.log(brands);
 	}
 
 	function getProductBrand(id) {

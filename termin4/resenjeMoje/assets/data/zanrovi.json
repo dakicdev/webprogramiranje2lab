@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "name": "Istorijski roman"
+    },
+    {
+        "id": 2,
+        "name": "Roman"
+    },
+    {
+        "id": 3,
+        "name": "Novela"
+    },
+    {
+        "id": 4,
+        "name": "Domaći klasik"
+    },
+    {
+        "id": 5,
+        "name": "Drama"
+    },
+    {
+        "id": 6,
+        "name": "Kriminalistička novela"
+    },
+    {
+        "id": 7,
+        "name": "Psihološka fikcija"
+    },
+    {
+        "id": 8,
+        "name": "Fikcija"
+    }
+]

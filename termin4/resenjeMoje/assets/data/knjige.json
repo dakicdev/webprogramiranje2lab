@@ -1,0 +1,149 @@
+[
+    {
+        "id": 1,
+        "img": {
+            "src": "assets/img/knjiga1.jpg",
+            "alt": "Product 1"
+        },
+        "name": "Na Drini Ćuprija",
+        "author": 1,
+        "price": {
+            "currentPrice": 50,
+            "oldPrice": 89
+        },
+        "genre": [
+            1
+        ]
+    },
+    {
+        "id": 2,
+        "img": {
+            "src": "assets/img/knjiga2.jpg",
+            "alt": "Product 2"
+        },
+        "name": "Prokleta avlija",
+        "author": 1,
+        "price": {
+            "currentPrice": 39.99,
+            "oldPrice": 90
+        },
+        "genre": [
+            2,
+            3
+        ]
+    },
+    {
+        "id": 3,
+        "img": {
+            "src": "assets/img/knjiga3.jpg",
+            "alt": "Product 3"
+        },
+        "name": "Gospođica",
+        "author": 1,
+        "price": {
+            "currentPrice": 42.99,
+            "oldPrice": 50
+        },
+        "genre": [
+            2
+        ]
+    },
+    {
+        "id": 4,
+        "img": {
+            "src": "assets/img/knjiga4.jpg",
+            "alt": "Product 4"
+        },
+        "name": "Znakovi pored puta",
+        "author": 1,
+        "price": {
+            "currentPrice": 42.99,
+            "oldPrice": 60
+        },
+        "genre": [
+            4
+        ]
+    },
+    {
+        "id": 5,
+        "img": {
+            "src": "assets/img/knjiga5.jpg",
+            "alt": "Product 5"
+        },
+        "name": "Braća Karamazovi",
+        "author": 2,
+        "price": {
+            "currentPrice": 52.99,
+            "oldPrice": 70
+        },
+        "genre": [
+            5
+        ]
+    },
+    {
+        "id": 6,
+        "img": {
+            "src": "assets/img/knjiga6.jpg",
+            "alt": "Product 6"
+        },
+        "name": "Zločin i Kazna",
+        "author": 2,
+        "price": {
+            "currentPrice": 42.99,
+            "oldPrice": 60
+        },
+        "genre": [
+            6,
+            7
+        ]
+    },
+    {
+        "id": 7,
+        "img": {
+            "src": "assets/img/knjiga7.jpg",
+            "alt": "Product 7"
+        },
+        "name": "1q84",
+        "author": 3,
+        "price": {
+            "currentPrice": 42.99,
+            "oldPrice": 60
+        },
+        "genre": [
+            3,
+            8
+        ]
+    },
+    {
+        "id": 8,
+        "img": {
+            "src": "assets/img/knjiga8.jpg",
+            "alt": "Product 8"
+        },
+        "name": "Sputnik ljubav",
+        "author": 3,
+        "price": {
+            "currentPrice": 42.99,
+            "oldPrice": 60
+        },
+        "genre": [
+            3
+        ]
+    },
+    {
+        "id": 9,
+        "img": {
+            "src": "assets/img/knjiga9.jpg",
+            "alt": "Product 9"
+        },
+        "name": "Igraj, igraj, igraj",
+        "author": 3,
+        "price": {
+            "currentPrice": 42.99,
+            "oldPrice": 60
+        },
+        "genre": [
+            8
+        ]
+    }
+]
